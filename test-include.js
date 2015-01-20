@@ -1,6 +1,6 @@
 (function() {
 	if ((/android/i.test(navigator.userAgent) || /iphone/i.test(navigator.userAgent)) && $("#header").length > 0) {
-		alert("yes");
+		$(".ui-page").animate({"top":30},800);
 
 	}
 })();
