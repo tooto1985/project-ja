@@ -9,7 +9,21 @@
 		html += "<a href=\"http://app.hishop.com.tw/?download=ja\">下載APP</a>";
 		html += "</div>";
 		$downloadapp.html(html);
-		$(".downloadapp").height(0).animate({"height":60},800);
-		$(".ui-page").animate({"top":60},800);
+		$(".downloadapp").height(0).css("overflow", "hidden").animate({
+			"height": 60
+		});
+		$(".ui-page").animate({
+			"top": 60
+		});
+		$(".ui-page").click(function() {
+			if ($(".downloadapp").height() !== 0) {
+				$(".downloadapp").animate({
+					"height": 0
+				});
+				$(".ui-page").animate({
+					"top": 0
+				});
+			}
+		});
 	}
 })();
