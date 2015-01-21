@@ -1,0 +1,9 @@
+.downloadapp {
+	height: 0;
+	overflow: hidden;
+}
+
+.downloadapp>div {
+	background-color: #343434;
+	height: 100%;
+}
