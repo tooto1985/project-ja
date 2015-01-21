@@ -2,7 +2,7 @@
 	if ((/android/i.test(navigator.userAgent) || /iphone/i.test(navigator.userAgent)) && $("#header").length > 0) {
 		var dla = "downloadapp",
 			_dla = "." + dla,
-			, $dla = $(_dla),
+			$dla = $(_dla),
 			$uip = $(".ui-page"),
 			adc = "adclose",
 			_adc = "." + adc;
