@@ -3,7 +3,28 @@
 	overflow: hidden;
 }
 
-.downloadapp>div {
+.downloadapp div {
 	background-color: #343434;
 	height: 100%;
+}
+
+.downloadapp table {
+	padding:5px 30px 5px 5px;
+}
+
+.downloadapp a {
+	width: 125px;
+	display: table-cell;
+	background-color: #efefef;
+	border-radius: 10px;
+	height: 40px;
+	color: #333;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.downloadapp span {
+	color: white;
+	text-shadow: 0 0;
 }
