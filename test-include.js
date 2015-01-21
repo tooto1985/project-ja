@@ -24,6 +24,7 @@
 		html += "</td>"				
 		html += "</tr>";
 		html += "</table>";
+		html += "<div class=\"adclose\"></div>";
 		html += "</div>";
 		$downloadapp.html(html);
 		$(".downloadapp").animate({

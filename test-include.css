@@ -3,7 +3,7 @@
 	overflow: hidden;
 }
 
-.downloadapp div {
+.downloadapp>div {
 	background-color: #343434;
 	height: 100%;
 }
@@ -27,4 +27,9 @@
 .downloadapp span {
 	color: white;
 	text-shadow: 0 0;
+}
+
+.downloadapp .adclose {
+	background-image: url(https://rawgit.com/tooto1985/project-ja/master/adclose.png);
+	
 }
