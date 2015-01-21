@@ -33,7 +33,7 @@
 		$(".ui-page").animate({
 			"top": 60
 		});
-		$(".ui-page").click(function() {
+		$(".ui-page,.adclose").click(function() {
 			if ($(".downloadapp").height() !== 0) {
 				$(".downloadapp").animate({
 					"height": 0
