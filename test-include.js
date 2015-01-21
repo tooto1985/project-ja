@@ -24,7 +24,7 @@
 		html += "<td>"
 		html += "<span>下載手機版APP瀏覽，活動訊息即時通知！</span>";
 		html += "</td>"
-		html += "<td width=\"125\">"
+		html += "<td width=\"100\">"
 		html += "<a href=\"http://app.hishop.com.tw/?download=ja\">立即下載</a>";
 		html += "</td>"
 		html += "</tr>";
