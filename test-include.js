@@ -18,13 +18,13 @@
 		var html = "<div>";
 		html += "<table border=\"0\">";
 		html += "<tr>";
-		html += "<td>"
+		html += "<td width=\"40\">"
 		html += "<img src=\"https://lh4.ggpht.com/1yLfmfOeaYWsTFHV0gyNGszIGhB2GudxM8D68T3GEJzfeljKaaANA14dL-jWTuIKTQ=w40-rw\">";
 		html += "</td>"
 		html += "<td>"
 		html += "<span>下載手機版APP瀏覽，活動訊息即時通知！</span>";
 		html += "</td>"
-		html += "<td>"
+		html += "<td width=\"125\">"
 		html += "<a href=\"http://app.hishop.com.tw/?download=ja\">立即下載</a>";
 		html += "</td>"
 		html += "</tr>";
