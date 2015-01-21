@@ -1,14 +1,19 @@
 (function() {
 	if ((/android/i.test(navigator.userAgent) || /iphone/i.test(navigator.userAgent)) && $("#header").length > 0) {
-		var $downloadapp = $(".downloadapp");
-		if ($downloadapp.length < 1) {
+		var dla = "downloadapp",
+			_dla = "." + dla,
+			, $dla = $(_dla),
+			$uip = $(".ui-page"),
+			adc = "adclose",
+			_adc = "." + adc;
+		if ($dla.length < 1) {
 			$("head").append($("<link>").attr({
 				rel: "stylesheet",
 				type: "text/css",
 				href: "https://rawgit.com/tooto1985/project-ja/master/test-include.css"
 			}));
-			$("body").prepend($("<div>").addClass("downloadapp"));
-			$downloadapp = $(".downloadapp");
+			$("body").prepend($("<div>").addClass(dla));
+			$dla = $(_dka);
 		}
 		var html = "<div>";
 		html += "<table border=\"0\">";
@@ -21,24 +26,23 @@
 		html += "</td>"
 		html += "<td>"
 		html += "<a href=\"http://app.hishop.com.tw/?download=ja\">立即下載</a>";
-		html += "</td>"				
+		html += "</td>"
 		html += "</tr>";
 		html += "</table>";
-		html += "<div class=\"adclose\"></div>";
+		html += "<div class=\"" + adc + "\"></div>";
 		html += "</div>";
-		$downloadapp.html(html);
-		$(".downloadapp").animate({
+		$dla.html(html).delay(2000).animate({
 			"height": 60
 		});
-		$(".ui-page").animate({
+		$uip.delay(2000).animate({
 			"top": 60
 		});
-		$(".ui-page,.adclose").click(function() {
-			if ($(".downloadapp").height() !== 0) {
-				$(".downloadapp").animate({
+		$uip.add($(_adc)).click(function() {
+			if ($dla.height() !== 0) {
+				$dla.animate({
 					"height": 0
 				});
-				$(".ui-page").animate({
+				$uip.animate({
 					"top": 0
 				});
 			}
