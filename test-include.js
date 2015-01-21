@@ -13,7 +13,7 @@
 				href: "https://rawgit.com/tooto1985/project-ja/master/test-include.css"
 			}));
 			$("body").prepend($("<div>").addClass(dla));
-			$dla = $(_dka);
+			$dla = $(_dla);
 		}
 		var html = "<div>";
 		html += "<table border=\"0\">";
