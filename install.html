@@ -1,10 +1,13 @@
 <script>
 $(function() {
-	var isTest = true;
-    if (!isTest || (isTest && QueryString("test")==="true")) {
-      	$.getScript("https://cdn.rawgit.com/act-tw/common-download-app/master/include.js",function() {
-            showdownloadapp();
+    try {
+        $.getScript("https://cdn.rawgit.com/act-tw/common-download-app/master/include.js",function() {
+            var isTest = true;
+            if (!isTest || (isTest && QueryString("test")==="true")) {
+                showdownloadapp();
+            }
         });
-    }		
+    } catch(e) {
+    }
 });
 </script>
