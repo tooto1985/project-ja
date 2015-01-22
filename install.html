@@ -1,16 +1,8 @@
 <script>
 $(function() {
-  function QueryString(name) {
-    var AllVars = window.location.search.substring(1);
-    var Vars = AllVars.split("&");
-    for (i = 0; i < Vars.length; i++) {
-        var Var = Vars[i].split("=");
-        if (Var[0].toUpperCase() == name.toUpperCase()) return Var[1];
+	$.getScript("https://rawgit.com/tooto1985/project-ja/master/test-include.js");
+    if (QueryString("test")==="true") {
+        showdownloadapp();
     }
-    return "";
-  }
-  if (QueryString("test")==="true") {
-    $.getScript("https://rawgit.com/tooto1985/project-ja/master/test-include.js");
-  }
 });
 </script>
