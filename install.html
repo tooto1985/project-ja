@@ -2,7 +2,7 @@
 $(function() {
 	var isTest = true;
     if (!isTest || (isTest && QueryString("test")==="true")) {
-      	$.getScript("https://rawgit.com/act-tw/common-download-app/master/include.js",function() {
+      	$.getScript("https://cdn.rawgit.com/act-tw/common-download-app/master/include.js",function() {
             showdownloadapp();
         });
     }		
