@@ -8,13 +8,11 @@
 }
 
 .downloadapp table {
-	padding:5px 40px 5px 10px;
 	width:100%;
 }
 
 .downloadapp a {
 	display: table-cell;
-	border-radius: 10px;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
@@ -26,11 +24,8 @@
 }
 
 .downloadapp .adclose {
-	background-image: url(https://rawgit.com/tooto1985/project-ja/master/adclose.png);
 	position: absolute;
 	top: 0;
-	width: 36px;
-	height: 36px;
 	right: 0;
 	cursor: pointer;
 }

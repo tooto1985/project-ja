@@ -21,8 +21,14 @@ function showdownloadapp(options) {
 		urlHeight: 40,
 		urlColor: "#333",
 		urlBackgroundColor: "#efefef",
+		urlBorderRadius: "10px";
+		closeImage: "https://rawgit.com/tooto1985/project-ja/master/adclose.png",
+		closeImageWidth: 36,
+		closeImageHeight: 36,
 		delayTime: 2000,
-		height: 60
+		height: 60,
+		padding: "5px 40px 5px 10px",
+		css: "https://rawgit.com/tooto1985/project-ja/master/test-include.css"
 	};
 	options = $.extend(defaultOptions, options);
 	if ((/android/i.test(navigator.userAgent) || /iphone/i.test(navigator.userAgent) || /ipad/i.test(navigator.userAgent)) && $("#header").length > 0) {
@@ -37,13 +43,13 @@ function showdownloadapp(options) {
 			$("head").append($("<link>").attr({
 				rel: "stylesheet",
 				type: "text/css",
-				href: "https://rawgit.com/tooto1985/project-ja/master/test-include.css"
+				href: options.css
 			}));
 			$("body").prepend($("<div>").addClass(dla));
 			$dla = $(_dla);
 		}
 		html += "<div style=\"background-color:" + options.backgroundColor + ";\">";
-		html += "<table border=\"0\">";
+		html += "<table border=\"0\" style=\"padding:" + options.padding + ";\">";
 		html += "<tr>";
 		html += "<td width=\"" + options.logoWidth + "\">"
 		html += "<img src=\"" + options.logo + "\" width=\"" + options.logoWidth + "\" height=\"" + options.logoHeight + "\">";
@@ -52,11 +58,11 @@ function showdownloadapp(options) {
 		html += "<span>" + options.text + "</span>";
 		html += "</td>"
 		html += "<td width=\"" + options.urlWidth + "\">"
-		html += "<a href=\"" + options.url + "\" style=\"width:" + options.urlWidth + "px;height:" + options.urlHeight + "px;color:" + options.urlColor + ";background-color:" + options.urlBackgroundColor + ";\">" + options.urlText + "</a>";
+		html += "<a href=\"" + options.url + "\" style=\"width:" + options.urlWidth + "px;height:" + options.urlHeight + "px;color:" + options.urlColor + ";background-color:" + options.urlBackgroundColor + ";border-radius:" + options.urlBorderRadius + ";\">" + options.urlText + "</a>";
 		html += "</td>"
 		html += "</tr>";
 		html += "</table>";
-		html += "<div class=\"" + adc + "\"></div>";
+		html += "<div class=\"" + adc + "\" style=\"background-image:url(" + options.closeImage + ");width:" + options.closeImageWidth + "px;height:" + options.closeImageHeight + "px;\"></div>";
 		html += "</div>";
 		$dla.html(html).delay(options.delayTime).animate({
 			"height": options.height
