@@ -61,7 +61,7 @@ function showdownloadapp(options) {
 		$dla.html(html).delay(options.delayTime).animate({
 			"height": options.height
 		});
-		$uip.delay(ooptions.delayTime).animate({
+		$uip.delay(options.delayTime).animate({
 			"top": options.height
 		});
 		$uip.add($(_adc)).click(function() {

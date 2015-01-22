@@ -1,8 +1,9 @@
 <script>
 $(function() {
-	$.getScript("https://rawgit.com/tooto1985/project-ja/master/test-include.js");
-    if (QueryString("test")==="true") {
-        showdownloadapp();
-    }
+	$.getScript("https://rawgit.com/tooto1985/project-ja/master/test-include.js",function() {
+        if (QueryString("test")==="true") {
+            showdownloadapp();
+        }		
+	});
 });
 </script>
