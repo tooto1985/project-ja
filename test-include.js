@@ -21,7 +21,7 @@ function showdownloadapp(options) {
 		urlHeight: 40,
 		urlColor: "#333",
 		urlBackgroundColor: "#efefef",
-		urlBorderRadius: "10px",
+		urlBorderRadius: "10px", 
 		closeImage: "https://rawgit.com/tooto1985/project-ja/master/adclose.png",
 		closeImageWidth: 36,
 		closeImageHeight: 36,
