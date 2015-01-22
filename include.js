@@ -14,7 +14,7 @@ function showdownloadapp(options) {
 		logo: "https://lh4.ggpht.com/1yLfmfOeaYWsTFHV0gyNGszIGhB2GudxM8D68T3GEJzfeljKaaANA14dL-jWTuIKTQ=w40-rw",
 		logoWidth: 40,
 		logoHeight: 40,
-		text: "下載手機版APP瀏覽，活動訊息即時通知！",
+		text: "下載手機版APP瀏覽, 活動訊息即時通知!",
 		url: "http://app.hishop.com.tw/?download=ja",
 		urlText: "立即下載",
 		urlWidth: 100,
