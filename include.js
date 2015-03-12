@@ -31,7 +31,7 @@ function showdownloadapp(options) {
 		css: "https://cdn.rawgit.com/act-tw/common-download-app/master/include.css"
 	};
 	options = $.extend(defaultOptions, options);
-	if ((/android/i.test(navigator.userAgent) || /iphone/i.test(navigator.userAgent) || /ipad/i.test(navigator.userAgent)) && $("#header").length > 0) {
+	if ((/android/i.test(navigator.userAgent) || /iphone/i.test(navigator.userAgent) || /ipad/i.test(navigator.userAgent)) && $("#header").length > 0 && location.href.indexOf("?dev=s") < 0) {
 		var dla = "downloadapp",
 			_dla = "." + dla,
 			$dla = $(_dla),
