@@ -1,4 +1,4 @@
-function QueryString(name) {
+﻿function QueryString(name) {
 	var AllVars = window.location.search.substring(1);
 	var Vars = AllVars.split("&");
 	for (i = 0; i < Vars.length; i++) {
