@@ -37,7 +37,7 @@ function showdownloadapp(options) {
 		var dla = "downloadapp",
 			_dla = "." + dla,
 			$dla = $(_dla),
-			$uip = $(".ui-page,.ui-header"),
+			$uip = $(".ui-page"),/*$(".ui-page,.ui-header"),*/
 			adc = "adclose",
 			_adc = "." + adc,
 			html = "";
