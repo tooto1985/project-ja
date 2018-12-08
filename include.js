@@ -22,13 +22,13 @@ function showdownloadapp(options) {
 		urlColor: "#333",
 		urlBackgroundColor: "#efefef",
 		urlBorderRadius: "10px",
-		closeImage: "https://cdn.rawgit.com/act-tw/common-download-app/master/adclose.png",
+		closeImage: "https://cdn.jsdelivr.net/gh/act-tw/common-download-app/adclose.png",
 		closeImageWidth: 36,
 		closeImageHeight: 36,
 		delayTime: 2000,
 		height: 60,
 		padding: "5px 40px 5px 10px",
-		css: "https://cdn.rawgit.com/act-tw/common-download-app/master/include.css"
+		css: "https://cdn.jsdelivr.net/gh/act-tw/common-download-app/include.css"
 	};
 	options = $.extend(defaultOptions, options);
 	if ((/android/i.test(navigator.userAgent) || /iphone/i.test(navigator.userAgent) || /ipad/i.test(navigator.userAgent)) && 
