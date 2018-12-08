@@ -1,7 +1,7 @@
 <script>
 $(function() {
     try {
-        $.getScript("https://cdn.rawgit.com/act-tw/common-download-app/master/include.js",function() {
+        $.getScript("https://cdn.jsdelivr.net/gh/act-tw/common-download-app/include.js",function() {
             var isTest = true;
             if (!isTest || (isTest && QueryString("test")==="true")) {
                 showdownloadapp();
